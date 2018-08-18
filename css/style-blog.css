@@ -397,7 +397,7 @@
 }
 .row{
     max-width: 100%;
-    min-height: 5em;
+    min-height: 10em;
     text-align: center;
 }
 .counter {
