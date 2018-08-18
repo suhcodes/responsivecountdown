@@ -355,8 +355,8 @@
             animation: blur-out-contract 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3s reverse both;
 }
 .text-flicker-in-glow {
-  -webkit-animation: text-flicker-in-glow 4s linear both;
-          animation: text-flicker-in-glow 4s linear both;
+  -webkit-animation: text-flicker-in-glow 0s linear both;
+          animation: text-flicker-in-glow 0s linear both;
 }
 .text-focus-in {
   -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3s both;
