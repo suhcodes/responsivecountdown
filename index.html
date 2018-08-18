@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SuhProg's blog is Coming Soon!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style-blog.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico'/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body class="new-bg-c">
+	<!-- Background video -->
+	<div class="fullscreen-bg">
+	    <video muted autoplay class="fullscreen-bg__video" id="myVideo">
+       		<source src="img/cometebyGY.mp4" type="video/webm">
+        	<source src="img/cometebyGY.mp4" type="video/mp4">
+        	<source src="img/cometebyGY.mp4" type="video/ogg">
+    	</video>
+	</div>
+	<!-- Page content -->
+	<div class="head-text">
+		<h2 class="tracking-in-contract-bck-top container">COMING SOON</h2>
+		<p class="text-focus-in">I'm currently working on my blog's content and visual features. While you wait for it, look me up on my social medias!</p>
+		<div class="d-block d-sm-block d-md-none smallcounter">
+			<p class="allinfo text-flicker-in-glow" id="allinfo"></p>
+		</div>
+		<div class="d-block d-sm-block d-md-none small-btn">
+			<button type="button" class="btn btn-outline-dark">StockOF</button><br><br>
+	  		<button type="button" class="btn btn-outline-dark">Twitter</button><br><br>
+	  		<button type="button" class="btn btn-outline-dark">GitHub</button><br><br>
+	  		<button type="button" class="btn btn-outline-dark">Instagram</button><br><br>
+	  		<button type="button" class="btn btn-outline-dark">Email</button><br><br>
+		</div>
+	</div>
+	<div class="content d-none d-sm-none d-md-block">
+		<div class="row">
+		  	<div class="col counter">
+		  		<p class="numbers text-flicker-in-glow" id="d"></p>
+		  		<p class="words">days</p>
+		  	</div>
+		  	<div class="col counter">
+		  		<p class="numbers text-flicker-in-glow" id="h"></p>
+		  		<p class="words">hours</p>
+		  	</div>
+		  	<div class="col counter">
+		  		<p class="numbers text-flicker-in-glow" id="m"></p>
+		  		<p class="words">minutes</p>
+		  	</div>
+		  	<div class="col counter">
+		  		<p class="numbers text-flicker-in-glow" id="s"></p>
+		  		<p class="words">seconds</p>
+		  	</div>
+		</div>
+		<div class="new-btn">
+	  		<button type="button" class="btn btn-outline-dark">StockOF</button>
+	  		<button type="button" class="btn btn-outline-dark">Twitter</button>
+	  		<button type="button" class="btn btn-outline-dark">GitHub</button>
+	  		<button type="button" class="btn btn-outline-dark">Instagram</button>
+	  		<button type="button" class="btn btn-outline-dark">Email</button>
+	  	</div>
+	</div>
+
+
+<!-- scripts -->
+<script type="text/javascript">
+	var vid = document.getElementById("myVideo");
+	vid.playbackRate = 0.6;
+</script>
+<script type="text/javascript">
+	document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+	function myHandler(e) {
+	    console.log('ended');
+	    setTimeout(function(){
+	        document.getElementById('myVideo').play();
+	    }, 2000);
+	}
+</script>
+<script type="text/javascript">
+	// Set the date we're counting down to
+	var countDownDate = new Date("Nov 18, 2018 12:00:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	    // Get todays date and time
+	    var now = new Date().getTime();
+	    
+	    // Find the distance between now and the count down date
+	    var distance = countDownDate - now;
+	    
+	    // Time calculations for days, hours, minutes and seconds
+	    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	    
+	    // Output the result in an element with id="demo"
+	    document.getElementById("d").innerHTML = days;
+	    document.getElementById("h").innerHTML = hours;
+	    document.getElementById("m").innerHTML = minutes;
+	    document.getElementById("s").innerHTML = seconds;
+	    document.getElementById("allinfo").innerHTML = days + " DAYS " + hours + ":" + minutes + ":" + seconds;
+	    
+	    // If the count down is over, write some text 
+	    if (distance < 0) {
+	        clearInterval(x);
+	        document.getElementById("demo").innerHTML = "Access the blog right now! <a href'suhprog.github.io/blog'>HERE</a>";
+	    }
+	}, 1000);
+</script>
+</body>
+</html>
