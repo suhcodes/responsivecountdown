@@ -170,9 +170,9 @@
     margin-right: 2.5em;
 }
 .sm-list-item {
-    border: 1px solid #070707;
+    /*border: 1px solid #070707;
+    border-radius: 1em;*/
     margin-bottom: 1em;
-    border-radius: 1em;
 }
 .sm-list a {
     font-size: 22px;
